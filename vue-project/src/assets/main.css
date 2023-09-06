@@ -4,11 +4,10 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-
   font-weight: normal;
 }
 
-a,
+a, code,
 .green {
   text-decoration: none;
   color: hsla(160, 100%, 37%, 1);
@@ -22,14 +21,17 @@ a,
 }
 
 @media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
+  html, body {
+    height: 100%;
   }
 
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    height: 100%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body{
+    color-scheme: dark;
   }
 }
